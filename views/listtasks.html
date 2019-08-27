@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <table id="t01">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Date
+                </th>
+                <th>
+                    Description
+                </th>
+            </tr>
+            <% for ( var i =0;i < tasksdb.length;i++ ){ %>
+                <tr>
+                    <td><%= tasksdb[i].name %></td>
+                    <td><%= tasksdb[i].due %></td>
+                    <td><%= tasksdb[i].desc %></td>
+                </tr>
+            <% } %>
+        </table>
+    </body>
+</html>
